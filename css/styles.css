@@ -9,8 +9,7 @@
 
 body {
   font-family: Roboto, sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
@@ -21,7 +20,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--accent-text-color);
 }
@@ -42,40 +40,45 @@ body {
 
 /*navigation*/
 
-.nav-link .link {
+.navigation {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  list-style: none;
+}
+.navigation.link {
   text-decoration: none;
 }
-
-.nav-link .link.current {
+.navigation.link.current {
   color: var(--accent-text-color);
 }
-.nav-link .link:hover {
+.navigation.link:hover {
   color: var(--accent-text-color);
 }
-.nav-link .link:focus {
+.navigation-link:focus {
   color: var(--accent-text-color);
 }
 
 /*contacts*/
 
-.contacts-link .link {
+.contacts {
   color: var(--primary-text-color);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  list-style: none;
+}
+.contacts.link {
   text-decoration: none;
 }
-.contacts-link .link:hover {
+.contacts.link:hover {
   color: var(--accent-text-color);
 }
-.contacts-link .link:focus {
+.contacts.link:focus {
   color: var(--accent-text-color);
 }
 
@@ -84,26 +87,70 @@ body {
 /*hero*/
 
 .hero {
-  color: var(--primary-background-color);
   background-color: var(--secondary-background-color);
-  text-transform: uppercase;
   text-align: center;
+}
+
+.hero-title {
+  color: var(--primary-background-color);
+  text-transform: uppercase;
+}
+
+.hero-button {
+  color: var(--primary-background-color);
+  background-color: var(--accent-text-color);
+  font-size: inherit;
+  cursor: pointer;
 }
 
 /*sections*/
 
-h2,
-h3,
-h4,
-h5,
-h6 {
+.section-title {
   color: var(--title-text-color);
 }
-
+.advantages {
+  list-style: none;
+}
+.advantages-title {
+  color: var(--title-text-color);
+}
+.advantages-description {
+  font-size: 14px;
+  line-height: 1.7;
+}
+.activity {
+  list-style: none;
+}
+.team {
+  list-style: none;
+}
+.team-member {
+  color: var(--title-text-color);
+  font-size: 16px;
+  line-height: 1.18;
+}
+.team-member-description {
+  font-size: 16px;
+  line-height: 1.18;
+}
 .section-team {
   background-color: var(--team-background-color);
 }
-
+.buttons-panel {
+  list-style: none;
+}
+.projects {
+  list-style: none;
+}
+.projects-example {
+  color: var(--title-text-color);
+  font-size: 18px;
+  line-height: 2;
+}
+.projects-description {
+  font-size: 16px;
+  line-height: 1.9;
+}
 .footer-style {
   background-color: var(--secondary-background-color);
   text-decoration: none;
@@ -113,28 +160,17 @@ h6 {
 
 .button {
   color: #212121;
-  background-color: #ffffff;
+  background-color: var(--team-background-color);
   font-size: inherit;
   cursor: pointer;
 }
-.button.primary {
+.hero.button {
   color: var(--primary-background-color);
   background-color: var(--accent-text-color);
-  font-size: inherit;
-  cursor: pointer;
-}
-.button.secondary {
-  color: var(--accent-text-color);
-  background-color: var(--primary-background-color);
   font-size: inherit;
   cursor: pointer;
 }
 .button:hover {
   background-color: var(--accent-text-color);
   color: var(--primary-background-color);
-  font-size: inherit;
-}
-
-.list {
-  list-style: none;
 }
