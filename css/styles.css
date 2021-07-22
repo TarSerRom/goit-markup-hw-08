@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -13,6 +23,7 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin: 0;
 }
 
 /*logo*/
@@ -106,6 +117,9 @@ body {
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: none;
 }
 
 /*sections*/
@@ -158,8 +172,20 @@ body {
   font-size: 16px;
   line-height: 1.87;
   cursor: pointer;
+  display: inline-block;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
 }
 .button:hover {
   background-color: var(--accent-text-color);
   color: var(--primary-background-color);
+}
+
+/*container*/
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
