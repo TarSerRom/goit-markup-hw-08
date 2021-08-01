@@ -7,7 +7,7 @@
   --team-background-color: #f5f4fa;
   --underline-color: #eeeeee;
   --main-menu-stroke-color: #ececec;
-  --clients-card-border-color: #AFB1B8;
+  --clients-card-border-color: #afb1b8;
 }
 
 body {
@@ -35,8 +35,7 @@ h5,
 h6,
 p,
 ul,
-li,
-{
+li {
   margin: 0;
 }
 ul {
@@ -142,7 +141,8 @@ img {
   height: 16px;
   text-decoration: none;
 }
-.contacts-link:hover,.contacts-link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-text-color);
 }
 .contacts-item {
@@ -150,13 +150,14 @@ img {
   align-items: center;
   margin-right: 50px;
 }
-.contacts-link svg{
+.contacts-link svg {
   height: 16px;
   width: 12px;
   fill: var(--primary-text-color);
   margin-right: 10px;
 }
-.contacts-link:hover svg, .contacts-link:focus svg {
+.contacts-link:hover svg,
+.contacts-link:focus svg {
   fill: var(--accent-text-color);
 }
 .contacts-item:last-child {
@@ -179,7 +180,7 @@ img {
     url("../images/overlay.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position:center;
+  background-position: center;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -252,7 +253,7 @@ img {
 .advantages-item:last-child {
   margin-right: 0;
 }
-.advantages-head{
+.advantages-head {
   display: flex;
   background-color: var(--team-background-color);
   border-radius: 4px;
@@ -261,7 +262,7 @@ img {
   align-items: center;
   height: 120px;
 }
-.advantages-icon{
+.advantages-icon {
   width: 70px;
   height: 70px;
 }
@@ -313,13 +314,13 @@ img {
 .team-item:last-child {
   margin-right: 0;
 }
-.social{
+.social {
   display: flex;
   justify-content: space-between;
   padding-left: 32px;
   padding-right: 32px;
 }
-.social-link{
+.social-link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -327,29 +328,29 @@ img {
   justify-content: center;
   border-radius: 50%;
 }
-.social-link svg{
+.social-link svg {
   fill: var(--clients-card-border-color);
   height: inherit;
   width: inherit;
   padding: 12px;
 }
- .social-link:hover,
- .social-link:focus {
-  background-color:var(--accent-text-color);
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-text-color);
 }
 .social-link:hover svg,
-.social-link:focus svg{
+.social-link:focus svg {
   fill: var(--primary-background-color);
 }
 
 /*5th section - clients*/
 
-.clients{
+.clients {
   display: flex;
   justify-content: space-between;
   margin: 0;
 }
-.clients-link{
+.clients-link {
   width: 170px;
   height: 90px;
   display: flex;
@@ -358,16 +359,18 @@ img {
   border: 1px solid var(--clients-card-border-color);
   border-radius: 4px;
 }
-.clients-link svg{
+.clients-link svg {
   fill: var(--clients-card-border-color);
   height: inherit;
   width: inherit;
   padding: 16px 32px 16px 32px;
 }
-.clients-link:hover,.clients-link:focus{
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--accent-text-color);
 }
-.clients-link:hover svg,.clients-link:focus svg{
+.clients-link:hover svg,
+.clients-link:focus svg {
   fill: var(--accent-text-color);
 }
 
@@ -405,6 +408,7 @@ img {
 .projects-description {
   font-size: 16px;
   line-height: 1.9;
+  color: var(--primary-text-color);
 }
 .projects-item {
   width: 370px;
@@ -416,6 +420,15 @@ img {
 }
 .projects-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+.projects-link {
+  display: block;
+  text-decoration: none;
+}
+
+.projects-link:hover,
+.projects-link:focus {
+  box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .footer-style {
@@ -442,6 +455,7 @@ img {
 .button:hover {
   background-color: var(--accent-text-color);
   color: var(--primary-background-color);
+  box-shadow: 0px 4px 4px 0px #00000040;
 }
 .button-menu {
   display: flex;
@@ -460,24 +474,24 @@ img {
   margin-top: 20px;
   font-style: normal;
 }
-.footer-position{
+.footer-position {
   display: flex;
 }
-.footer-icon{
+.footer-icon {
   background-color: rgba(255, 255, 255, 0.1);
   margin-right: 10px;
 }
-.footer-icon svg{
+.footer-icon svg {
   fill: var(--primary-background-color);
 }
-.footer-block{
+.footer-block {
   margin-right: 70px;
 }
-.joinus{
+.joinus {
   display: flex;
   margin: 0;
 }
-.joinus-title{
+.joinus-title {
   color: var(--primary-background-color);
   font-size: 14px;
   font-weight: 700;
