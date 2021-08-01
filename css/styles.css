@@ -7,12 +7,13 @@
   --team-background-color: #f5f4fa;
   --underline-color: #eeeeee;
   --main-menu-stroke-color: #ececec;
+  --clients-card-border-color: #AFB1B8;
 }
 
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin: 0;
@@ -33,7 +34,9 @@ h4,
 h5,
 h6,
 p,
-ul {
+ul,
+li,
+{
   margin: 0;
 }
 ul {
@@ -125,25 +128,36 @@ img {
 
 .contacts {
   display: flex;
+  align-items: center;
   margin-left: auto;
   font-style: normal;
+  justify-content: left;
 }
 .contacts-link {
+  display: flex;
   color: var(--primary-text-color);
-  text-decoration: none;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  margin-left: auto;
+  height: 16px;
+  text-decoration: none;
 }
-.contacts-link:hover {
-  color: var(--accent-text-color);
-}
-.contacts-link:focus {
+.contacts-link:hover,.contacts-link:focus {
   color: var(--accent-text-color);
 }
 .contacts-item {
+  display: flex;
+  align-items: center;
   margin-right: 50px;
+}
+.contacts-link svg{
+  height: 16px;
+  width: 12px;
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+}
+.contacts-link:hover svg, .contacts-link:focus svg {
+  fill: var(--accent-text-color);
 }
 .contacts-item:last-child {
   margin-right: 0;
@@ -156,8 +170,19 @@ img {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--secondary-background-color);
   text-align: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/overlay.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -199,7 +224,6 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  margin-bottom: 50px;
   text-align: center;
   margin-top: 0;
   margin-bottom: 50px;
@@ -208,6 +232,7 @@ img {
 
 .advantages {
   display: flex;
+  margin: 0;
 }
 .advantages-title {
   color: var(--title-text-color);
@@ -226,6 +251,19 @@ img {
 }
 .advantages-item:last-child {
   margin-right: 0;
+}
+.advantages-head{
+  display: flex;
+  background-color: var(--team-background-color);
+  border-radius: 4px;
+  justify-content: center;
+  margin-bottom: 30px;
+  align-items: center;
+  height: 120px;
+}
+.advantages-icon{
+  width: 70px;
+  height: 70px;
 }
 
 /*3rd section - activity*/
@@ -264,6 +302,7 @@ img {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  margin-bottom: 16px;
 }
 .team-background {
   background-color: var(--team-background-color);
@@ -274,6 +313,65 @@ img {
 .team-item:last-child {
   margin-right: 0;
 }
+.social{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.social-link{
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.social-link svg{
+  fill: var(--clients-card-border-color);
+  height: inherit;
+  width: inherit;
+  padding: 12px;
+}
+ .social-link:hover,
+ .social-link:focus {
+  background-color:var(--accent-text-color);
+}
+.social-link:hover svg,
+.social-link:focus svg{
+  fill: var(--primary-background-color);
+}
+
+/*5th section - clients*/
+
+.clients{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.clients-link{
+  width: 170px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--clients-card-border-color);
+  border-radius: 4px;
+}
+.clients-link svg{
+  fill: var(--clients-card-border-color);
+  height: inherit;
+  width: inherit;
+  padding: 16px 32px 16px 32px;
+}
+.clients-link:hover,.clients-link:focus{
+  border-color: var(--accent-text-color);
+}
+.clients-link:hover svg,.clients-link:focus svg{
+  fill: var(--accent-text-color);
+}
+
+/*footer*/
 
 .adress-item {
   margin-bottom: 9px;
@@ -361,4 +459,29 @@ img {
 .footer-adress {
   margin-top: 20px;
   font-style: normal;
+}
+.footer-position{
+  display: flex;
+}
+.footer-icon{
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-right: 10px;
+}
+.footer-icon svg{
+  fill: var(--primary-background-color);
+}
+.footer-block{
+  margin-right: 70px;
+}
+.joinus{
+  display: flex;
+  margin: 0;
+}
+.joinus-title{
+  color: var(--primary-background-color);
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
