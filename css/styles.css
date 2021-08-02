@@ -138,7 +138,6 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  height: 16px;
   text-decoration: none;
 }
 .contacts-link:hover,
@@ -147,12 +146,10 @@ img {
 }
 .contacts-item {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   margin-right: 50px;
 }
-.contacts-link svg {
-  height: 16px;
-  width: 12px;
+.contacts-icon {
   fill: var(--primary-text-color);
   margin-right: 10px;
 }
@@ -254,13 +251,13 @@ img {
   margin-right: 0;
 }
 .advantages-head {
+  padding: 25px;
   display: flex;
   background-color: var(--team-background-color);
   border-radius: 4px;
   justify-content: center;
   margin-bottom: 30px;
   align-items: center;
-  height: 120px;
 }
 .advantages-icon {
   width: 70px;
@@ -316,9 +313,7 @@ img {
 }
 .social {
   display: flex;
-  justify-content: space-between;
-  padding-left: 32px;
-  padding-right: 32px;
+  justify-content: center;
 }
 .social-link {
   width: 44px;
@@ -328,7 +323,14 @@ img {
   justify-content: center;
   border-radius: 50%;
 }
-.social-link svg {
+.social-item {
+  margin-right: 10px;
+}
+.social-item:last-child {
+  margin: 0;
+}
+
+.social-pic {
   fill: var(--clients-card-border-color);
   height: inherit;
   width: inherit;
@@ -351,19 +353,17 @@ img {
   margin: 0;
 }
 .clients-link {
-  width: 170px;
-  height: 90px;
+  padding: 16px 32px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid var(--clients-card-border-color);
   border-radius: 4px;
 }
-.clients-link svg {
+.clients-icon {
   fill: var(--clients-card-border-color);
-  height: inherit;
-  width: inherit;
-  padding: 16px 32px 16px 32px;
+  height: 60px;
+  width: 106px;
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -452,7 +452,8 @@ img {
   border-radius: 4px;
   border: transparent;
 }
-.button:hover {
+.button:hover,
+button:focus {
   background-color: var(--accent-text-color);
   color: var(--primary-background-color);
   box-shadow: 0px 4px 4px 0px #00000040;
@@ -475,6 +476,7 @@ img {
   font-style: normal;
 }
 .footer-position {
+  align-items: baseline;
   display: flex;
 }
 .footer-icon {
@@ -487,10 +489,21 @@ img {
 .footer-block {
   margin-right: 70px;
 }
+.footer-block:last-child {
+  margin-right: 0;
+}
+
 .joinus {
   display: flex;
   margin: 0;
 }
+.joinus-item {
+  margin-right: 10px;
+}
+.joinus-item:last-child {
+  margin-right: 0;
+}
+
 .joinus-title {
   color: var(--primary-background-color);
   font-size: 14px;
