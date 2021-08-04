@@ -106,6 +106,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
+  position: relative;
 }
 .navigation-link.current {
   color: var(--accent-text-color);
@@ -116,6 +117,20 @@ img {
 .navigation-link:focus {
   color: var(--accent-text-color);
 }
+.navigation-link.current::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-text-color);
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  box-shadow: rgba(0, 0, 0, 0.25);
+}
+
 .navigation-item {
   margin-right: 50px;
 }
@@ -389,6 +404,35 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
+
+.projects-action {
+  position: relative;
+  overflow: hidden;
+}
+.projects-action:hover .projects-overlay {
+  transform: translateX(0);
+}
+
+.projects-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-text-color);
+  opacity: 0.9;
+
+  transform: translateX(-100%);
+  transition: transform 250ms ease;
+}
+
+.overlay-text {
+  color: var(--primary-background-color);
+  padding: 63px 24px;
+  height: 100%;
+  font-size: 18px;
+}
+
 .projects-card {
   padding-bottom: 20px;
   padding-top: 20px;
