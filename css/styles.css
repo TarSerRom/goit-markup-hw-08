@@ -363,8 +363,8 @@ img {
 .social-link:focus {
   background-color: var(--accent-text-color);
 }
-.social-pic:hover,
-.social-pic:focus {
+.social-link:hover svg,
+.social-link:focus svg {
   fill: var(--primary-background-color);
 }
 
