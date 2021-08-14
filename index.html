@@ -357,16 +357,15 @@
             <div class="footer-block">
                 <h3 class="joinus-title">Подпишитесь на рассылку</h3>
                 <div class="subscribe">
-                <form>
-                    <div class="subscrive-field">
-                    <input class="subscribe-input" type="email" name="email" id="email" placeholder="E-mail" />
-                    </div>
-                </form>
-                <button type="submit" class="subscribe-button">Подписаться
+                <form class="subscribe-form">
+                    <input class="subscribe-input" type="subscribe" name="subscribe" id="subscribe" placeholder="E-mail" />
+                    <button type="submit" class="subscribe-button">Подписаться
                     <svg class="subscribe-icon">
                         <use href="./images/icons.svg#icon-subscribe"></use>
                     </svg>
-                </button>
+                    </button>
+                </form>
+                </div>
             </div>
         </div>
 
@@ -374,7 +373,6 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <div class="button-place">
             <button  class="modal-button" data-modal-close>
                 <svg class="modal-icon">
                     <use href="./images/icons.svg#icon-xmark"></use>
