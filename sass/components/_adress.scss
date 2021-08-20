@@ -1,0 +1,14 @@
+.adress {
+  margin-top: 20px;
+  font-style: normal;
+}
+.adress__item {
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.adress__accent {
+  color: $primary-background-color;
+}

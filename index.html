@@ -312,13 +312,13 @@
     <footer class="footer">
         <div class="container footer__position">
             <div class="footer__block">
-                <a class="logo logo--footer" href="">Web<span class="accent-footer">Studio</span></a>
-                <address class="footer__adress">
+                <a class="logo logo--footer" href="">Web<span class="footer__accent">Studio</span></a>
+                <address class="adress">
                     <ul>
-                        <li class="adress-item"><span class="accent-adress">г. Киев, пр-т Леси Украинки, 26</span></li>
-                        <li class="adress-item"><a class="contacts__link"
+                        <li class="adress__item"><span class="adress__accent">г. Киев, пр-т Леси Украинки, 26</span></li>
+                        <li class="adress__item"><a class="contacts__link"
                                 href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li class="adress-item"><a class="contacts__link" href="tel:+380961111111"> +38 096 111 11 11</a>
+                        <li class="adress__item"><a class="contacts__link" href="tel:+380961111111"> +38 096 111 11 11</a>
                         </li>
                     </ul>
                 </address>
@@ -371,47 +371,47 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="modal__button" data-modal-close>
-                <svg class="modal__icon">
+            <button class="modal__close-button" data-modal-close>
+                <svg class="modal__close-icon">
                     <use href="./images/icons.svg#icon-xmark"></use>
                 </svg>
             </button>
-        <form class="modal-form">
-            <p class="modal-form__title">Оставьте свои данные, мы Вам перезвоним</p>
-            <div class="modal-form__field">
-                <label class="modal-form__label" for="name">Имя</label>
-                <input class="modal-form__input" type="text" name="name" id="name" placeholder=" " />
+        <form class="modal__form">
+            <p class="modal__title">Оставьте свои данные, мы Вам перезвоним</p>
+            <div class="modal__field">
+                <label class="modal__label" for="name">Имя</label>
+                <input class="modal__input" type="text" name="name" id="name" placeholder=" " />
     
-                <svg class="modal-form__icon">
+                <svg class="modal__icon">
                     <use href=./images/icons.svg#icon-person></use>
                 </svg>
             </div>
-            <div class="modal-form__field">
-                <label class="modal-form__label" for="tel">Телефон</label>
-                <input class="modal-form__input" type="tel" name="tel" id="tel" placeholder=" " />
-                <svg class="modal-form__icon">
+            <div class="modal__field">
+                <label class="modal__label" for="tel">Телефон</label>
+                <input class="modal__input" type="tel" name="tel" id="tel" placeholder=" " />
+                <svg class="modal__icon">
                     <use href=./images/icons.svg#icon-phone></use>
                 </svg>
             </div>
-            <div class="modal-form__field">
-                <label class="modal-form__label" for="email">Почта</label>
-                <input class="modal-form__input" type="email" name="email" id="email" placeholder=" " />
-                <svg class="modal-form__icon">
+            <div class="modal__field">
+                <label class="modal__label" for="email">Почта</label>
+                <input class="modal__input" type="email" name="email" id="email" placeholder=" " />
+                <svg class="modal__icon">
                     <use href=./images/icons.svg#icon-modmail></use>
                 </svg>
             </div>
-            <div class="modal-form__field">
+            <div class="modal__field">
                 <label class="modal-form__label" for="comentary">Коментарий</label>
-                <textarea class="modal-form__textarea" name="comentary" id="comentary" placeholder="Введите текст"></textarea>
+                <textarea class="modal__textarea" name="comentary" id="comentary" placeholder="Введите текст"></textarea>
             </div>
     
-            <label class="modal-form__agreement" for="agreement">
-                <input type="checkbox" class="modal-form__checkbox" name="agreement" id="agreement" />
-                <span class="modal-form__checkbox-icon"></span>
-                Cоглашаюсь с рассылкой и принимаю<a class="modal-form__link" href="">Условия договора</a>
+            <label class="modal__agreement" for="agreement">
+                <input type="checkbox" class="modal__checkbox" name="agreement" id="agreement" />
+                <span class="modal__checkbox-icon"></span>
+                Cоглашаюсь с рассылкой и принимаю<a class="modal__link" href="">Условия договора</a>
             </label>
     
-            <button type="submit" class="modal-form__button">Отправить</button>
+            <button type="submit" class="modal__submit-button">Отправить</button>
         </form>
         </div>
     </div>

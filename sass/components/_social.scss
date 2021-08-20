@@ -5,9 +5,7 @@
 .social__link {
   width: 44px;
   height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %centered;
   border-radius: 50%;
 
   @include animation(background-color);

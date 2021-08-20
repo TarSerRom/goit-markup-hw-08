@@ -1,0 +1,26 @@
+.footer {
+  background-color: $secondary-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__accent {
+  color: $primary-background-color;
+}
+.footer__position {
+  align-items: baseline;
+  display: flex;
+}
+.footer__icon {
+  background-color: $footer-icon-color;
+  margin-right: 10px;
+}
+.footer__icon svg {
+  fill: $primary-background-color;
+}
+.footer__block {
+  margin-right: 70px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

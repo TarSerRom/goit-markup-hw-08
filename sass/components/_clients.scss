@@ -1,0 +1,29 @@
+.clients {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.clients__link {
+  padding: 16px 32px;
+  @extend %centered;
+  border: 1px solid $clients-card-border-color;
+  border-radius: 4px;
+
+  @include animation(border-color);
+
+  &:hover,
+  &:focus {
+    border-color: $accent-text-color;
+  }
+  &:hover svg,
+  &:focus svg {
+    fill: $accent-text-color;
+  }
+}
+.clients__icon {
+  fill: $clients-card-border-color;
+  height: 60px;
+  width: 106px;
+
+  @include animation(fill);
+}
