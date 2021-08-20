@@ -1,0 +1,42 @@
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  font-style: normal;
+  justify-content: left;
+}
+.contacts__link {
+  display: inline-flex;
+  align-items: center;
+  color: $primary-text-color;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  @include animation(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
+  }
+  &:hover svg,
+  &:focus svg {
+    fill: $accent-text-color;
+  }
+}
+.contacts__item {
+  display: flex;
+  align-items: baseline;
+  margin-right: 50px;
+
+  @include animation(fill);
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+.contacts__icon {
+  fill: $primary-text-color;
+  margin-right: 10px;
+}

@@ -1,0 +1,38 @@
+.social {
+  display: flex;
+  justify-content: center;
+}
+.social__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  @include animation(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-text-color;
+  }
+  &:hover svg,
+  &:focus svg {
+    fill: $primary-background-color;
+  }
+}
+.social__item {
+  margin-right: 10px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+.social__pic {
+  fill: $clients-card-border-color;
+  height: inherit;
+  width: inherit;
+  padding: 12px;
+
+  @include animation(fill);
+}

@@ -1,0 +1,19 @@
+.activity {
+  display: flex;
+  justify-content: space-between;
+}
+.activity__item {
+  position: relative;
+}
+.activity__description {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  color: $primary-background-color;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: $activity-background-color;
+}
