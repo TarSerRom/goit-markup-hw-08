@@ -1,9 +1,21 @@
-.sorting {
-  display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+.filter {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
-.sorting__button {
+
+.filter__button {
   color: $title-text-color;
   font-family: inherit;
   background-color: $team-background-color;
@@ -28,10 +40,17 @@
   }
 }
 
-.sorting__item {
+.filter__item {
   margin-right: 8px;
 
   &:last-child {
     margin-right: 0;
+  }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
   }
 }
