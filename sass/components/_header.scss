@@ -1,11 +1,18 @@
-/*.header {
+.header {
   border-bottom: 1px solid $main-menu-stroke-color;
 }
 .header__line {
+  position: relative;
   display: flex;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: left;
+  }
 }
 .header__accent {
   color: $title-text-color;
 }
-*/
