@@ -19,13 +19,12 @@
     <header class="header">
         <div class="container header__line">
             <a class="logo" href="">Web<span class="header__accent">Studio</span></a>
-                <button type="button" class="menu__button" aria-expanded="false" aria-controls="menu__container" data-menu-button>
+            <button type="button" class="menu__toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
                     <svg width="40" height="40" aria-label="changer of mobile menu">
-                        <use class="menu__icon-menu" href="./images/icons.svg#icon-menu"></use>
-                        <use class="menu__icon-cross" href="./images/icons.svg#icon-xmark"></use>
+                        <use href="./images/icons.svg#icon-menu"></use>
                     </svg>
-                </button>
-            <div class="menu__container" id="menu_container" data-menu>
+            </button>
+            <div class="menu">
                 <nav>
                     <ul class="navigation">
                         <li class="navigation__item"><a class="navigation__link current" href="">Студия</a></li>
@@ -51,7 +50,7 @@
                     <li class="networks__item"><a href="" class="networks__link">Facebook</a></li>
                     <li class="networks__item"><a href="" class="networks__link">Linkedin</a></li>
                 </ul>
-            </div>    
+            </div>
         </div>
     </header>
 
@@ -59,7 +58,6 @@
     <!--1st section of the main part - hero-->
 
     <main>
-
         <section class="hero">
             <h1 class="hero__title">Эффективные решения <br /> для вашего бизнеса</h1>
             <button  type="button" class="hero__button" data-modal-open >Заказать услугу</button>
@@ -321,6 +319,41 @@
             </div>
         </section>
     </main>
+    <div class="menu__container js-menu-container" id="mobile-menu">
+        <button class="menu__toggle js-close-menu">
+            <svg width="40" height="40" aria-label="changer of mobile menu">
+                <use href="./images/icons.svg#icon-xmark"></use>
+            </svg>
+        </button>
+        <div class="mobile-menu">
+            <nav>
+                <ul class="navigation">
+                    <li class="navigation__item"><a class="navigation__link current" href="">Студия</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="contacts contacts--header">
+                <li class="contacts__item"><a class="contacts__link contacts__link--mail" href="mailto:info@devstudio.com">
+                        <svg width="16" height="12" class="contacts__icon">
+                            <use href="./images/icons.svg#icon-mail"></use>
+                        </svg>info@devstudio.com</a>
+                </li>
+                <li class="contacts__item"><a class="contacts__link contacts__link--cell" href="tel:+380961111111">
+                        <svg width="10" height="16" class="contacts__icon">
+                            <use href="./images/icons.svg#icon-cell"></use>
+                        </svg>+38 096 111 11 11</a>
+                </li>
+            </ul>
+            <ul class="networks">
+                <li class="networks__item"><a href="" class="networks__link">Instagram</a></li>
+                <li class="networks__item"><a href="" class="networks__link">Twitter</a></li>
+                <li class="networks__item"><a href="" class="networks__link">Facebook</a></li>
+                <li class="networks__item"><a href="" class="networks__link">Linkedin</a></li>
+            </ul>
+        </div>
+    </div>
+
 
     <!--bottom tool's panel-->
     <footer class="footer">
@@ -433,7 +466,10 @@
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
 
-</body>`
+</body>
 
 </html>

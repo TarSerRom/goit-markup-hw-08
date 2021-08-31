@@ -1,10 +1,23 @@
-.menu__button {
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu__toggle {
+  min-height: 40px;
+  min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  z-index: 2;
-  right: 15px;
 
   margin: 0;
   padding: 0;
@@ -14,45 +27,40 @@
   border-radius: 50%;
   outline: none;
 
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
   &:hover svg,
   &:focus svg {
     fill: $accent-text-color;
   }
-
-  .menu__icon-cross {
-    display: none;
-  }
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-.menu__button.is-open .menu__icon-menu {
-  display: none;
-}
-.menu__button.is-open .menu__icon-cross {
-  display: block;
 }
 
 .menu__container {
-  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
   background-color: $primary-background-color;
+  z-index: 999;
 
-  @media screen and (max-width: 767px) {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    z-index: 1;
-    padding: 48px 40px;
-  }
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
 
   &.is-open {
-    display: block;
+    transform: translateX(0);
   }
+}
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-  }
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }

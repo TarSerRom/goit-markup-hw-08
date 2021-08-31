@@ -2,9 +2,9 @@
   border-bottom: 1px solid $main-menu-stroke-color;
 }
 .header__line {
-  position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   @media screen and (min-width: 768px) {
     justify-content: space-between;
